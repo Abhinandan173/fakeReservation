@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f2f5;
+}
+
+/* login  */
+.login {
+    width: 50%;
+    margin: auto;
+    background-color: #fff;
+    margin-top: 100px;
+    padding: 32px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.login h1 {
+   color: #1877f2;
+   font-weight: bold;
+}
+
+.login h3 {
+   color: #1877f2;
+   font-weight: 100;
+}
+
+.login input {
+    padding: 8px;
+    border: 1px solid #dddfe2;
+    /* color: #f0f2f5; */
+}
+
+.login .register-route {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 32px;
+    cursor: pointer;
+}
+
+/* sign up page ui  */
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 50%;
+    margin: auto;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+}
+
+.sign-up input{
+    padding: 8px;
+    border: 1px solid #dddfe2;
+}
+
+.sign-up p {
+    color: #383839;
+    font-size: 12px;
+}
+
+.sign-up p>span {
+    color: #1877f2;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* error message  */
+.error-message {
+    color: rgba(241, 82, 82, 0.74) !important;
+    font: 8px;
+}
+
+/* logout link  */
+.logout-link {
+    padding: 6px 12px;
+    background-color: #e4e6eb;
+    border-radius: 5px;
+    color: #050505;
+    cursor: pointer;
+
+}
+.show-password {
+    display: flex;
+}
+/* login card */
+.card {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  
+}
+
+/* button style  */
+
+.custom-button {
+    border: none;
+    padding: 5px 32px;
+    background-color: #1877f2;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* header component ui  */
+
+.header-layout {
+  display: grid;
+  grid-template-columns: 20% 1fr 20%;
+  justify-items: center;
+  background-color: rgb(63, 3, 82);
+  padding: 24px;
+}
+
+.header-layout h1 {
+    color: white;
+}
+.header-layout nav {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    place-self: center;
+}
+
+.header-layout div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+/* side bar component ui  */
+
+.side-bar {
+    width: 100%;
+    height: 100vh;
+    border-right: 2px dotted gray;
+    box-shadow: 12px 0 12px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+}
+
+.side-bar p {
+    padding: 18px;
+    color: #383839;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.side-bar p:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #050505;
+    
+}
+
+.page-container {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+}
+
+.page-container .header-layout {
+    grid-column: 1/-1;
+}
+
+
+/* plan journey page ui  */
+.create-reservation {
+    width: 50%;
+    margin: auto;
+    padding: 24px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    margin-top: 50px;
+}
+
+.label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    color: #383839;
+    align-items: center;
+    margin-left: 12px;
+}
+
+.label input {
+    width: 50%;
+    padding: 12px 24px;
+
+}
+
+
+/* input dropdown ui  */
+
+.input-dropdown-item {
+   padding: 12px 24px;
+   width: 100%;
+
+}
+
+
+/* dashboard ui  */
+.dashboard h2 {
+    color: #383839;
+    text-align: center;
+    padding: 12px;
+    font-size: 32px;
+}
+
+.reservation-list-container {
+    width: 70%;
+    margin: auto;
+    margin-top: 12px;
+}
+
+.filter-options {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    font-size: 18px;
+    color: #383839;
+    padding: 6px;
+    margin-left: 8px;
+}
+
+.filter-options .input-dropdown {
+    padding: 8px;
+    width: 50%;
+}
+
+/* reservation card ui  */
+.reservation-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 16px 0px;
+    background-color: #fff;
+    padding: 12px;
+}
+
+.journey-date,.journey-from,.jorney-to {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 12px;
+    color: #383839;
+}
+
+.journey-date>span,.journey-from>span,.jorney-to>span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #050505;
+}
+
+.no-reservaiton {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #1877f2;
+}
+
