@@ -71,16 +71,8 @@ export default function Login({ dispatch }) {
         }).then(data => {
             checkCredentials(data)
         })
-        // let username = 'sample@gmail.com'
-        // let password = 'Password@123'
-        // if (credentials.email === username && credentials.password === password) {
-        //     setValidation({ ...validation, loginErr: '' })
-        //     return false
-        // }
-
-        // setValidation({ ...validation, loginErr: 'incorrect password or username' })
-        // return true
     }
+    
 
 
     const handleLogin = () => {

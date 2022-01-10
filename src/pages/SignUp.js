@@ -47,7 +47,6 @@ function SignUp({dispatch}) {
         }).catch(res=>console.log(res))
     }
     const handleSignUp = () => {
-        // debugger
         if(!user.email || !user.password || !user.phoneNumber || !user.confirmPassword ){
             setUserErr({
                 ...userErr,
