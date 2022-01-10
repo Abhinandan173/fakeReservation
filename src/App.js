@@ -6,8 +6,6 @@ import {
 import { getData } from "./API/api";
 import PrivateRoute from "./Auth/PrivateRoute";
 import PublicRoute from "./Auth/PublicRoute";
-// import HeaderLayout from "./components/HeaderLayout";
-// import Sidebar from "./components/Sidebar";
 import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
 import PlanJourney from "./pages/PlanJourney";
